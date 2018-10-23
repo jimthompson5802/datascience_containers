@@ -1,0 +1,17 @@
+FROM continuumio/anaconda3:latest
+
+# add package to support multiple kernels
+RUN conda install -y nb_conda_kernels
+
+# add Python 2.7 Kernel
+RUN conda create -n py27 -y anaconda python=2.7
+
+
+# specify run-time user
+RUN useradd ds_user && mkdir -p /home/ds_user && chown ds_user:staff /home/ds_user
+
+
+# set user
+USER ds_user
+
+RUN echo $MY_NOTEBOOK "abc"

@@ -1,0 +1,24 @@
+FROM continuumio/anaconda3:latest
+
+# Version Specification
+ENV APACHE_SPARK_VERSION 2.3.2
+ENV HADOOP_VERSION 2.7
+
+# install java 8
+RUN apt-get -y install openjdk-8-jdk
+
+# install Spark
+RUN curl -s http://mirror.reverse.net/pub/apache/spark/spark-${APACHE_SPARK_VERSION}/spark-${APACHE_SPARK_VERSION}-bin-hadoop${HADOOP_VERSION}.tgz | tar -xz -C /usr/local/
+RUN cd /usr/local && ln -s spark-${APACHE_SPARK_VERSION}-bin-hadoop${HADOOP_VERSION} spark
+
+# set up environment variables
+ENV SPARK_HOME /usr/local/spark
+ENV PYTHONPATH $SPARK_HOME/python:$SPARK_HOME/python/lib/py4j-0.10.7.src.zip
+ENV PATH $SPARK_HOME/bin:$PATH
+ENV PYSPARK_DRIVER_PYTHON "jupyter"
+ENV PYSPARK_DRIVER_PYTHON_OPTS "notebook --ip='*' --port=8888 \
+      --notebook-dir=/notebooks --no-browser --NotebookApp.token=''"
+
+# specify run-time user
+RUN useradd ds_user && mkdir -p /home/ds_user && chown ds_user:ds_user /home/ds_user
+USER ds_user

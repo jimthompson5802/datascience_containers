@@ -1,0 +1,31 @@
+version: '3'
+
+services:
+
+# Anaconda environment
+  nb:
+    #image: continuumio/anaconda3
+    build: 
+      context: .
+      dockerfile: Dockerfile_jpynb
+    
+    ports:
+      - "8888"
+
+    volumes:
+      - "${MY_NOTEBOOKS:-/tmp}:/my_notebooks"
+
+    # command to start jupyter notebook server
+    # disable NotebookApp.token not recommended
+    command: >
+           /opt/conda/bin/jupyter notebook --notebook-dir=/my_notebooks 
+              --ip='*' 
+              --port=8888 
+              --no-browser 
+              --NotebookApp.token=''
+
+    # -i docker run cli option
+    stdin_open: true
+
+    # -t docker run cli option    
+    tty: true

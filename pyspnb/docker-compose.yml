@@ -1,0 +1,26 @@
+version: '3'
+
+
+services:
+
+# Anaconda environment
+  nb_server:
+    #image: continuumio/anaconda3
+    build: .
+    
+    ports:
+      - "12074:8888"
+      - "12075:4040"
+
+    volumes:
+      - "/Users/jim/Desktop/notebook_sandbox:/notebooks"
+
+    # command to start jupyter notebook server
+    # disable NotebookApp.token not recommended
+    command:  pyspark --driver-memory 8g --master local[*] 
+
+    # -i docker run cli option
+    stdin_open: true
+
+    # -t docker run cli option    
+    tty: true

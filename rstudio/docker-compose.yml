@@ -1,0 +1,25 @@
+version: '3'
+
+
+services:
+
+  rstudio:
+    build:
+      context: .
+      dockerfile: Dockerfile_rstudio
+
+    ports:
+      - "8787"
+
+    env_file: rstudio.env
+
+    volumes:
+      - "${MY_NOTEBOOKS:-/tmp}:/notebooks"
+      
+    # -i docker run cli option
+    stdin_open: true
+
+    # -t docker run cli option    
+    tty: true
+
+   

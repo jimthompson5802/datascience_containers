@@ -1,0 +1,6 @@
+FROM continuumio/anaconda3:latest
+
+
+# specify run-time user
+RUN useradd ds_user && mkdir -p /home/ds_user && chown ds_user:staff /home/ds_user
+USER ds_user
