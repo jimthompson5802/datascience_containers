@@ -6,9 +6,9 @@ Anconda Python and Jupyter Notebook
 
 Create file set_compose_env and enter
 ```
-MY_NOTEBOOKS=<directory containing notebooks>
+export MY_NOTEBOOKS=<directory containing notebooks>
 ```
-example `MY_NOTEBOOKS=/Users/jim/Desktop/my_source_files`
+example `export MY_NOTEBOOKS=/Users/jim/Desktop/my_source_files`
 
 Change working directory to directory containing these files.
 
