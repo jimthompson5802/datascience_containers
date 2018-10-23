@@ -9,6 +9,7 @@ Create file set_compose_env:
 MY_NOTEBOOKS=<directory containing notebooks>
 ```
 
+Change working directory to directory containing these files.
 
 ```
 # set environment variable MY_NOTEBOOKS
