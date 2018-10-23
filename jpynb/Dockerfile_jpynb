@@ -14,4 +14,3 @@ RUN useradd ds_user && mkdir -p /home/ds_user && chown ds_user:staff /home/ds_us
 # set user
 USER ds_user
 
-RUN echo $MY_NOTEBOOK "abc"
