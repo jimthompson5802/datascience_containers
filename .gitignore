@@ -1,0 +1,4 @@
+.DS_Store
+*.env
+*/set_compose_env
+
