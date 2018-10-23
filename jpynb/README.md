@@ -1,4 +1,6 @@
-# Instructions
+# Anaconda Python with Jupyter Notebook Server
+
+## Instructions
 
 Anconda Python and Jupyter Notebook
 

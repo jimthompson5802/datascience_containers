@@ -1,4 +1,6 @@
-# Instructions
+# RStudio Server (Open Source)
+
+## Instructions
 
 RStudio Server 
 
