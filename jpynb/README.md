@@ -2,9 +2,9 @@
 
 Anconda Python and Jupyter Notebook
 
-Specify in set_compose_env:
+Create file set_compose_env:
 ```
-MY_NOTEBOOKS=<location for notebooks>
+MY_NOTEBOOKS=<directory containing notebooks>
 ```
 
 
