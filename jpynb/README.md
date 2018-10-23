@@ -12,7 +12,10 @@ MY_NOTEBOOKS=<directory containing notebooks>
 # set environment variable MY_NOTEBOOKS
 source ./set_compose_env
 
-# start up container
+# start up Jupyter Notebook server
 docker-compose up -d
+
+# launch broswer to connect to Jupyter Notebook server
+./launch_jpynb
 ```
 
