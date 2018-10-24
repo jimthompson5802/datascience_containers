@@ -4,6 +4,9 @@
 #  Script to launch data science container
 ###
 
+# find base location
+base_dir=`dirname $0`
+
 # get server to start
 server=$1
 
@@ -13,7 +16,7 @@ export MY_NOTEBOOKS=${2:-$PWD}
 
 # Launch container
 # Start web broser and connect to container with the host port assigned
-cd ../$server \
+cd $base_dir/../$server \
    && docker-compose up -d \
    && if [ $server = "jpynb" ]; then
          # jpynb

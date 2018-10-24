@@ -1,9 +1,12 @@
 #!/bin/bash
 
+# find base location
+base_dir=`dirname $0`
+
 # get server to start
 server=$1
 
 # Stop server
-cd ../$server \
+cd $base_dir/../$server \
    && docker-compose down
 
