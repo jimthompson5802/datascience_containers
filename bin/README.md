@@ -2,7 +2,7 @@
 
 Add bin directory to PATH environment variable
 
-To launch a container:
+### To launch a container:
 ```
 launch_dss server [source_code_dir]
 ```
@@ -11,7 +11,7 @@ launch_dss server [source_code_dir]
 `source_code_dir`: location of source code directory.  If missing, assumes the current working directory
 
 
-To stop a container:
+### To stop a container:
 ```
 stop_dss server
 ```
