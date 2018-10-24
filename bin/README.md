@@ -18,4 +18,4 @@ stop_dss server
 `server`: `jpynb` or `rstudio`
 
 ### Note:
-Depending on results of kubernetes testing, this method may get retired.
+Depending on results of kubernetes testing, the above commands may get retired.
