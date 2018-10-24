@@ -14,11 +14,6 @@ System Requirements:
 Directories:
 * `bin` scripts to start and stop containers
 * `jpynb` Anaconda Python with Jupyter notebook
-* `pyspnb` Ancaonda Python with Jupyter notebook with stand-alone Spark
+* `pyspnb` Ancaonda Python with Jupyter notebook with stand-alone Spark (Work-in-progress)
 * `rstudio` Rstudio Server (open source)
-* `dscntr` Container that combines Anaconda Python and RStudio Server
-
-
-Limitations:
-* Rstudio authentication dependent of static password stored in rstudio.env
-* Slow performance during conda create if directory for conda environment is outside of container
+* `dscntr` Container that combines Anaconda Python and RStudio Server (Work-in-progress)
