@@ -18,5 +18,5 @@ stop_dss server
 `server`: `jpynb` or `rstudio`
 
 ### Note:
-* The bash script design assumes only one instance of any specific data science software stack is active.  For exaample, unpredictable results if two instances of `jpynb` are started.  However, it is possible to simulatenously run one instance of `jpynb` and one instance of `rstudio`.
+* The bash script design assumes only one instance of any specific data science software stack is active.  For example, unpredictable results if two instances of `jpynb` are started.  However, it is possible to simulatenously run one instance of `jpynb` and one instance of `rstudio`.
 * Depending on results of kubernetes testing, the above commands may get retired.
