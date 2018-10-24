@@ -6,8 +6,7 @@ To launch a container:
 ```
 launch_dss server [source_code_dir]
 ```
-`server`: "jpynb" for Jupyter Notebook Server with Anaconda Python
-        "rstudio" for RStudio Server
+`server`: `jpynb` for Jupyter Notebook Server with Anaconda Python or `rstudio` for RStudio Server
 
 `source_code_dir`: location of source code directory.  If missing, assumes the current working directory
 
@@ -16,4 +15,4 @@ To stop a container:
 ```
 stop_dss server
 ```
-`server`: "jpynb" or "rstudio"
+`server`: `jpynb` or `rstudio`
