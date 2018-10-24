@@ -4,22 +4,14 @@
 
 Anconda Python and Jupyter Notebook
 
-Create file set_compose_env and enter
+### To start container:
 ```
-export MY_NOTEBOOKS=<directory containing notebooks>
+launch_dss jpynb [source_code_dir]
 ```
-example `export MY_NOTEBOOKS=/Users/jim/Desktop/my_source_files`
+`source_code_dir`: optional parameter, if missing assumes current working directory.
 
-Change working directory to directory containing these files.
 
+### To stop conatiner:
 ```
-# set environment variable MY_NOTEBOOKS
-source ./set_compose_env
-
-# start up Jupyter Notebook server
-docker-compose up -d
-
-# launch broswer to connect to Jupyter Notebook server
-./launch_jpynb
+stop_dss jpynb
 ```
-

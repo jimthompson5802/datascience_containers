@@ -1,6 +1,6 @@
 # RStudio Server (Open Source)
 
-## Instructions
+## Set up
 
 RStudio Server 
 
@@ -10,22 +10,17 @@ PASSWORD=<password for rstudio user>
 ```
 example `PASSWORD=this_is_password`
 
-Create file set_compose_env
+## Instructions 
+
+### To start container:
 ```
-export MY_NOTEBOOKS=<directory containing source code>
+launch_dss rstudio [source_code_dir]
 ```
-example `MY_NOTEBOOKS=/User/jim/Desktop/my_source_code`
+`source_code_dir`: optional parameter, if missing assumes current working directory.
 
-Change working directory to directory containing these files.
 
+### To stop conatiner:
 ```
-# set environment variable MY_NOTEBOOKS
-source ./set_compose_env
-
-# start up Rstudio Server container
-docker-compose up -d
-
-# launch browser to connect to RStudio Server
-./launch_rstudio
+stop_dss rstudio
 ```
 

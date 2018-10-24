@@ -1,6 +1,0 @@
-#!/bin/bash
-
-# launch chrome with the host port assigned to the exposed port
-/usr/bin/open -a "/Applications/Google Chrome.app" \
-"http://127.0.0.1:"\
-`docker container inspect jpynb_server_1 | jq -r '.[0].NetworkSettings.Ports."8888/tcp"[0].HostPort'`
