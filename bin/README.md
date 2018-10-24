@@ -16,3 +16,6 @@ launch_dss server [source_code_dir]
 stop_dss server
 ```
 `server`: `jpynb` or `rstudio`
+
+### Note:
+Depending on results of kubernetes testing, this method may get retired.
