@@ -12,14 +12,13 @@ System Requirements:
 * Chrome Browser
 
 Directories:
-* **jpynb** Anaconda Python with Jupyter notebook
-* **pyspnb** Ancaonda Python with Jupyter notebook with stand-alone Spark
-* **rstudio** Rstudio Server (open source)
-* **dscntr** Container that combines Anaconda Python and RStudio Server
+* `bin` scripts to start and stop containers
+* `jpynb` Anaconda Python with Jupyter notebook
+* `pyspnb` Ancaonda Python with Jupyter notebook with stand-alone Spark
+* `rstudio` Rstudio Server (open source)
+* `dscntr` Container that combines Anaconda Python and RStudio Server
 
 
 Limitations:
-* Hardcoded file locations
-* Jupyter Notebook authenticaion diabled
 * Rstudio authentication dependent of static password stored in rstudio.env
 * Slow performance during conda create if directory for conda environment is outside of container
