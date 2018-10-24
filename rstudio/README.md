@@ -24,3 +24,5 @@ launch_dss rstudio [source_code_dir]
 stop_dss rstudio
 ```
 
+### Limitations:
+* Rstudio authentication dependent of static password stored in rstudio.env
