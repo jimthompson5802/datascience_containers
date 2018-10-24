@@ -15,3 +15,6 @@ launch_dss jpynb [source_code_dir]
 ```
 stop_dss jpynb
 ```
+
+### Limitations:
+* Notebook authentican disabled.
