@@ -1,0 +1,19 @@
+#!/bin/bash
+
+###
+#  Script to launch data science container
+###
+
+# find base location
+base_dir=`dirname $0`
+
+# get server to start
+server=$1
+
+# specify location of data science experiment source code
+export MY_NOTEBOOKS=${2:-$PWD}
+
+
+# start requested data science stack
+echo "Starting Stack: "
+docker stack deploy --compose-file $base_dir/../$server/docker-compose.yml $server
