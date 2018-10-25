@@ -8,7 +8,7 @@ support the following software stacks:
 
 System Requirements:
 * MacOS
-* Docker 18.06.1 ce (requires kubernetes enabled)
+* Docker for Mac 18.06.1 ce (requires kubernetes enabled)
 * Chrome Browser
 
 Directories:
