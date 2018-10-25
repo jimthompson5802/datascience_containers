@@ -14,7 +14,7 @@ example `PASSWORD=this_is_password`
 
 ### To start container:
 ```
-start rstudio [source_code_dir]
+start_dss rstudio [source_code_dir]
 ```
 `source_code_dir`: optional parameter, if missing assumes current working directory.
 
