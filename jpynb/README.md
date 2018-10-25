@@ -6,7 +6,7 @@ Anconda Python and Jupyter Notebook
 
 ### To start container:
 ```
-launch_dss jpynb [source_code_dir]
+start jpynb [source_code_dir]
 ```
 `source_code_dir`: optional parameter, if missing assumes current working directory.
 
