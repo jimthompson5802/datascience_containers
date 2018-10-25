@@ -4,7 +4,7 @@ Add bin directory to PATH environment variable
 
 ### To launch a container:
 ```
-start server [source_code_dir]
+start_dss server [source_code_dir]
 ```
 `server`: `jpynb` for Jupyter Notebook Server with Anaconda Python or `rstudio` for RStudio Server
 
