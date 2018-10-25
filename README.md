@@ -2,7 +2,7 @@
 
 Personal docker containers that provide data science software.  Containers 
 support the following software stacks:
-* Aanconda Python with Jupyter Notebook
+* Anaconda Python with Jupyter Notebook
 * Rstudio Server 
 * Apache Spark (Stand-alone)
 
