@@ -3,7 +3,7 @@ version: '3'
 services:
 
 # Anaconda environment
-  server:
+  jpynb:
     #image: continuumio/anaconda3
     build: 
       context: .

@@ -20,10 +20,10 @@ cd $base_dir/../$server \
    && docker-compose up -d \
    && if [ $server = "jpynb" ]; then
          # jpynb
-         port=`docker container inspect ${server}_server_1 | jq -r '.[0].NetworkSettings.Ports."8888/tcp"[0].HostPort'`
+         port=`docker container inspect ${server}_${server}_1 | jq -r '.[0].NetworkSettings.Ports."8888/tcp"[0].HostPort'`
        else
          # assumes rstudio
-         port=`docker container inspect ${server}_server_1 | jq -r '.[0].NetworkSettings.Ports."8787/tcp"[0].HostPort'`
+         port=`docker container inspect ${server}_${server}_1 | jq -r '.[0].NetworkSettings.Ports."8787/tcp"[0].HostPort'`
      fi \
    && /usr/bin/open -a "/Applications/Google Chrome.app" \
        "http://127.0.0.1:"$port
