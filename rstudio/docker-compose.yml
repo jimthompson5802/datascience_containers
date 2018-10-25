@@ -8,6 +8,8 @@ services:
       context: .
       dockerfile: Dockerfile_rstudio
 
+    image: rstudio
+
     ports:
       - "8787"
 

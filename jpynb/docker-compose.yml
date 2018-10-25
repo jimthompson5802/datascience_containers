@@ -8,6 +8,7 @@ services:
     build: 
       context: .
       dockerfile: Dockerfile_jpynb
+    image: jpynb
     
     ports:
       - "8888"
