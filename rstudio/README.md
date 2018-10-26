@@ -6,6 +6,7 @@ RStudio Server
 
 Create file `set_env_variables`:
 ```
+# set password for the default userid rstudio
 export PASSWORD=<password for rstudio user>
 ```
 example `export PASSWORD=this_is_password`
