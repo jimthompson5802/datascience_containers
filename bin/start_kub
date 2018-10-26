@@ -13,6 +13,14 @@ server=$1
 # specify location of data science experiment source code
 export MY_NOTEBOOKS=${2:-$PWD}
 
+# set other required environment variables
+echo $base_dir/../$server/set_env_variables
+if [ -f $base_dir/../$server/set_env_variables ]; then
+	source $base_dir/../$server/set_env_variables
+fi
+
+echo password is $PASSWORD
+
 
 # start requested data science stack
 echo "Starting Stack: "

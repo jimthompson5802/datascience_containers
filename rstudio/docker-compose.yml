@@ -13,7 +13,8 @@ services:
     ports:
       - "8787"
 
-    env_file: rstudio.env
+    environment:
+      - PASSWORD=$PASSWORD
 
     volumes:
       - "${MY_NOTEBOOKS:-/tmp}:/notebooks"

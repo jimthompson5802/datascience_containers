@@ -4,11 +4,11 @@
 
 RStudio Server 
 
-Create file rstudio.env:
+Create file `set_env_variables`:
 ```
-PASSWORD=<password for rstudio user>
+export PASSWORD=<password for rstudio user>
 ```
-example `PASSWORD=this_is_password`
+example `export PASSWORD=this_is_password`
 
 ## Instructions 
 
