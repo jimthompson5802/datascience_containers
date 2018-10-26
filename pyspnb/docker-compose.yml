@@ -4,16 +4,20 @@ version: '3'
 services:
 
 # Anaconda environment
-  nb_server:
+  pyspnb:
     #image: continuumio/anaconda3
-    build: .
+    build: 
+      context: .
+      dockerfile: Dockerfile_pyspnb
+
+    image: pyspnb
     
     ports:
-      - "12074:8888"
-      - "12075:4040"
+      - "8888"
+      - "4040"
 
     volumes:
-      - "/Users/jim/Desktop/notebook_sandbox:/notebooks"
+      - "${MY_NOTEBOOKS:-/tmp}:/notebooks"
 
     # command to start jupyter notebook server
     # disable NotebookApp.token not recommended
