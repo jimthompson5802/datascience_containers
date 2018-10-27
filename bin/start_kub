@@ -19,8 +19,6 @@ if [ -f $base_dir/../$server/set_env_variables ]; then
 	source $base_dir/../$server/set_env_variables
 fi
 
-echo password is $PASSWORD
-
 
 # start requested data science stack
 echo "Starting Stack: "
