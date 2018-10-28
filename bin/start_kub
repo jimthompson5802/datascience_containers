@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ###
-#  Script to launch data science container
+#  Script to start data science container
 ###
 
 # find base location
@@ -25,6 +25,4 @@ echo "Starting Stack: "
 docker stack deploy --compose-file $base_dir/../$server/docker-compose.yml $server
 
 
-# get port to launch browser
-/usr/bin/open -a "/Applications/Google Chrome.app" \
-       "http://127.0.0.1:"`kubectl get svc -o json $server-random-ports | jq -r '.spec.ports[0].nodePort'`
+

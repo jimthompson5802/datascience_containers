@@ -1,0 +1,12 @@
+#!/bin/bash
+
+###
+# launch web browser for existing data science container
+###
+
+server=$1
+
+# get port to launch browser
+/usr/bin/open -a "/Applications/Google Chrome.app" \
+       "http://127.0.0.1:"`kubectl get svc -o json $server-random-ports | jq -r '.spec.ports[0].nodePort'` 
+
