@@ -26,5 +26,6 @@ case "$server" in
 	    exit 1
  
      esac \
+    && echo "start on browser on http://127.0.0.1:"$port \
    && /usr/bin/open -a "/Applications/Google Chrome.app" \
        "http://127.0.0.1:"$port

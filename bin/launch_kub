@@ -7,6 +7,9 @@
 server=$1
 
 # get port to launch browser
+port=`kubectl get svc -o json $server-random-ports | jq -r '.spec.ports[0].nodePort'`
+
+echo "Start browser on http://127.0.0.1:"$port
 /usr/bin/open -a "/Applications/Google Chrome.app" \
-       "http://127.0.0.1:"`kubectl get svc -o json $server-random-ports | jq -r '.spec.ports[0].nodePort'` 
+       "http://127.0.0.1:"$port
 
