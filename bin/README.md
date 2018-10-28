@@ -6,7 +6,11 @@ Add bin directory to PATH environment variable
 
 ### To launch a container:
 ```
+# start running container
 start_dss server [source_code_dir]
+
+# launch web broswer for server
+launch_dss server
 ```
 `server`: `jpynb` for Jupyter Notebook Server with Anaconda Python or `rstudio` for RStudio Server
 
@@ -27,7 +31,11 @@ stop_dss server
 
 ### To launch a kubernetes service:
 ```
+# start container using kubernetes
 start_kub server
+
+# launch web server for server
+launch_kub server
 ```
 `server`: `jpynb` for Jupyter Notebook Server with Anaconda Python or `rstudio` for RStudio Server
 
