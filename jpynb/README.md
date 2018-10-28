@@ -1,5 +1,15 @@
 # Anaconda Python with Jupyter Notebook Server
 
+## Set up
+
+Create file set_env_variables:
+```
+# set password and options for Jupyter Notebook
+export NOTEBOOK_PASSWORD=`python -c"from notebook.auth import passwd;print(passwd('<password>'))"`
+```
+example:
+`export NOTEBOOK_PASSWORD=`python -c"from notebook.auth import passwd;print(passwd('your_password'))"`
+
 ## Instructions
 
 Anconda Python and Jupyter Notebook
