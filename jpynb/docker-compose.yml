@@ -23,7 +23,7 @@ services:
               --ip='*' 
               --port=8888 
               --no-browser 
-              --NotebookApp.token=''
+              --NotebookApp.password=${NOTEBOOK_PASSWORD}
 
     # -i docker run cli option
     stdin_open: true

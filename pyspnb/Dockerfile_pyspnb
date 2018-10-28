@@ -16,8 +16,6 @@ ENV SPARK_HOME /usr/local/spark
 ENV PYTHONPATH $SPARK_HOME/python:$SPARK_HOME/python/lib/py4j-0.10.7.src.zip
 ENV PATH $SPARK_HOME/bin:$PATH
 ENV PYSPARK_DRIVER_PYTHON "jupyter"
-ENV PYSPARK_DRIVER_PYTHON_OPTS "notebook --ip='*' --port=8888 \
-      --notebook-dir=/notebooks --no-browser --NotebookApp.token=''"
 
 # specify run-time user
 RUN useradd ds_user && mkdir -p /home/ds_user && chown ds_user:ds_user /home/ds_user

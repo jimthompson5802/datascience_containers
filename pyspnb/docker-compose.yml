@@ -16,12 +16,14 @@ services:
       - "8888"
       - "4040"
 
+    environment:
+      - PYSPARK_DRIVER_PYTHON_OPTS=${PYSPARK_DRIVER_PYTHON_OPTS}
+
     volumes:
-      - "${MY_NOTEBOOKS:-/tmp}:/notebooks"
+      - "${MY_NOTEBOOKS:-/tmp}:/my_notebooks"
 
     # command to start jupyter notebook server
-    # disable NotebookApp.token not recommended
-    command:  pyspark --driver-memory 8g --master local[*] 
+    command: pyspark --driver-memory 8g --master local[*] 
 
     # -i docker run cli option
     stdin_open: true
