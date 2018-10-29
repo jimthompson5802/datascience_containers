@@ -5,10 +5,9 @@
 Create file set_env_variables:
 ```
 # set password and options for Jupyter Notebook
-export NOTEBOOK_PASSWORD=`python -c"from notebook.auth import passwd;print(passwd('<password>'))"`
+export NOTEBOOK_PASSWORD=sha1:<hashed password>
 ```
-example:
-`export NOTEBOOK_PASSWORD=`python -c"from notebook.auth import passwd;print(passwd('your_password'))"`
+
 
 ## Instructions
 
