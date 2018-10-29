@@ -1,4 +1,4 @@
 .DS_Store
 *.env
 */set_env_variables
-
+bin/generate_notebook_password
