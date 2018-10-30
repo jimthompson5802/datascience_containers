@@ -20,7 +20,7 @@ services:
       - PYSPARK_DRIVER_PYTHON_OPTS=${PYSPARK_DRIVER_PYTHON_OPTS}
 
     volumes:
-      - "${MY_NOTEBOOKS:-/tmp}:/my_notebooks"
+      - "${MY_WORKAREA:-/tmp}:/my_workarea"
 
     # command to start jupyter notebook server
     command: pyspark --driver-memory 8g --master local[*] 

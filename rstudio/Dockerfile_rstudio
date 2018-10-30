@@ -2,4 +2,4 @@ FROM rocker/rstudio-stable:latest
 
 
 # create link to user source code
-RUN cd /home/rstudio && ln -s /notebooks notebooks
+RUN cd /home/rstudio && ln -s /my_workarea my_workarea

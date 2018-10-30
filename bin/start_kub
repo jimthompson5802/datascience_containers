@@ -11,7 +11,7 @@ base_dir=`dirname $0`
 server=$1
 
 # specify location of data science experiment source code
-export MY_NOTEBOOKS=${2:-$PWD}
+export MY_WORKAREA=${2:-$PWD}
 
 # set other required environment variables
 echo $base_dir/../$server/set_env_variables

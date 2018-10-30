@@ -17,7 +17,7 @@ services:
       - PASSWORD=$PASSWORD
 
     volumes:
-      - "${MY_NOTEBOOKS:-/tmp}:/notebooks"
+      - "${MY_WORKAREA:-/tmp}:/my_workarea"
       
     # -i docker run cli option
     stdin_open: true
