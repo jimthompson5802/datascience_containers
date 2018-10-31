@@ -1,2 +1,4 @@
-# FoxyProxy config file to support dynamic port forwarding to AWS
-Currently working with Chrome Browser.  Required to allow browser access to containers running in the AWS ec2 instances.
+# FoxyProxy Config File 
+Required to support dynamic port forwarding to AWS.  This allows browser accessing containers through the ec2 instance public internet interface.  Currently working with Chrome Browser.
+
+Use of FoxyProxy is modelled after [AWS's use of FoxyProxy to support access to EMR clusters](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-connect-master-node-proxy.html).
