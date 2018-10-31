@@ -15,6 +15,6 @@ System Requirements:
 Directories:
 * `bin` scripts to start and stop containers
 * `jpynb` Anaconda Python
-* `pyspnb` Ancaonda Python with stand-alone Spark (Work-in-progress)
+* `pyspnb` Ancaonda Python with stand-alone Spark
 * `rstudio` Rstudio Server (open source)
 * `tfcpu` Anaconda Python with Tensorflow
