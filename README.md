@@ -5,6 +5,7 @@ support the following software stacks:
 * Anaconda Python with Jupyter Notebook
 * Rstudio Server 
 * Apache Spark (Stand-alone)
+* Tensorflow
 
 System Requirements:
 * MacOS
@@ -13,6 +14,7 @@ System Requirements:
 
 Directories:
 * `bin` scripts to start and stop containers
-* `jpynb` Anaconda Python with Jupyter notebook
-* `pyspnb` Ancaonda Python with Jupyter notebook with stand-alone Spark (Work-in-progress)
+* `jpynb` Anaconda Python
+* `pyspnb` Ancaonda Python with stand-alone Spark (Work-in-progress)
 * `rstudio` Rstudio Server (open source)
+* `tfcpu` Anaconda Python with Tensorflow
