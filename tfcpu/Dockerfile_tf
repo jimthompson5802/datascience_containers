@@ -1,0 +1,15 @@
+# Get specific version of Anaconda with the right version for Tensorflow
+FROM continuumio/anaconda3:4.3.1
+
+# install TensorFlow cpu-only
+RUN pip install --ignore-installed \
+     --upgrade https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-1.11.0-cp36-cp36m-linux_x86_64.whl
+
+
+# specify run-time user
+RUN useradd ds_user && mkdir -p /home/ds_user && chown ds_user:staff /home/ds_user
+
+
+# set user
+USER ds_user
+
