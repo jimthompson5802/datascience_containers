@@ -17,4 +17,4 @@ Directories:
 * `jpynb` Anaconda Python
 * `pyspnb` Ancaonda Python with stand-alone Spark
 * `rstudio` Rstudio Server (open source)
-* `tfcpu` Anaconda Python with Tensorflow
+* `tfcpu` Anaconda Python with Tensorflow (cpu-only)
