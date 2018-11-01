@@ -1,0 +1,32 @@
+version: '3'
+
+services:
+
+# Anaconda environment
+  tfgpu:
+    #image: continuumio/anaconda3
+    build: 
+      context: .
+      dockerfile: Dockerfile_tf
+    image: tfgpu
+    
+    ports:
+      - "8888"
+
+    volumes:
+      - "${MY_WORKAREA:-/tmp}:/my_workarea"
+
+    # command to start jupyter notebook server
+    # disable NotebookApp.token not recommended
+    command: >
+           /opt/conda/bin/jupyter notebook --notebook-dir=/my_workarea 
+              --ip='*' 
+              --port=8888 
+              --no-browser 
+              --NotebookApp.password=${NOTEBOOK_PASSWORD}
+
+    # -i docker run cli option
+    stdin_open: true
+
+    # -t docker run cli option    
+    tty: true
