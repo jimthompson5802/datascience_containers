@@ -11,18 +11,16 @@ export NOTEBOOK_PASSWORD=sha1:<hashed password>
 
 ## Instructions
 
-Anconda Python and Jupyter Notebook
-
 ### To start container:
 ```
-start_dss jpynb [source_code_dir]
+start_dss tfcpu [source_code_dir]
 ```
 `source_code_dir`: optional parameter, if missing assumes current working directory.
 
 
 ### To stop conatiner:
 ```
-stop_dss jpynb
+stop_dss tfcpu
 ```
 
 ### Limitations:

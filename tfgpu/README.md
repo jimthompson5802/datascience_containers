@@ -11,7 +11,6 @@ export NOTEBOOK_PASSWORD=sha1:<hashed password>
 
 ## Instructions
 
-Anconda Python and Jupyter Notebook
 
 ### To start container:
 ```
