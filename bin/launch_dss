@@ -23,5 +23,6 @@ case "$server" in
  
      esac \
     && echo "start on browser on http://127.0.0.1:"$port \
-   && /usr/bin/open -a "/Applications/Google Chrome.app" \
-       "http://127.0.0.1:"$port
+   && if [ `uname -s` = "Darwin" ]; then
+         /usr/bin/open -a "/Applications/Google Chrome.app" "http://127.0.0.1:"$port
+      fi
