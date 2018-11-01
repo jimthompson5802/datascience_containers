@@ -1,4 +1,4 @@
-# Anaconda Python with Jupyter Notebook Server
+# Anaconda Python with Tensorflow (CPU-only)
 
 ## Set up
 
