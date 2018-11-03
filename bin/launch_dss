@@ -17,8 +17,12 @@ case "$server" in
 	    port=`docker container inspect ${server}_${server}_1 | jq -r '.[0].NetworkSettings.Ports."8787/tcp"[0].HostPort'`
 	    ;;
 
+	h2o)
+	    port=`docker container inspect ${server}_${server}_1 | jq -r '.[0].NetworkSettings.Ports."54321/tcp"[0].HostPort'`
+	    ;;
+
 	*)
-	    echo "Unknown Service"
+	    echo "Unknown Service, update launch_dss script"
 	    exit 1
  
      esac \
