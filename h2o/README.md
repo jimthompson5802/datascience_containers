@@ -10,7 +10,7 @@ Installation based on information found [here](https://h2o-release.s3.amazonaws.
 ```
 start_dss h2o [source_code_dir]
 ```
-`source_code_dir`: optional parameter, if missing assumes current working directory.
+`source_code_dir`: Not Applicable.
 
 
 ### To stop conatiner:
