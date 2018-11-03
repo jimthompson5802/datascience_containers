@@ -6,6 +6,7 @@ support the following software stacks:
 * Rstudio Server 
 * Apache Spark (Stand-alone)
 * Tensorflow
+* h20
 
 System Requirements:
 * MacOS
@@ -14,6 +15,7 @@ System Requirements:
 
 Directories:
 * `bin` scripts to start and stop containers
+* `h2o` h2o server
 * `jpynb` Anaconda Python
 * `pyspnb` Ancaonda Python with stand-alone Spark
 * `rstudio` Rstudio Server (open source)
