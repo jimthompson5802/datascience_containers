@@ -6,7 +6,7 @@ support the following software stacks:
 * Rstudio Server 
 * Apache Spark (Stand-alone)
 * Tensorflow
-* h20
+* h2o
 
 System Requirements:
 * MacOS
