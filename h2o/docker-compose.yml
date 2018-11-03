@@ -1,0 +1,27 @@
+version: '3'
+
+services:
+
+# h2o image
+  h2o:
+    build: 
+      context: .
+      dockerfile: Dockerfile_h2o
+    image: h2o
+    
+    ports:
+      - "54321"
+      - "54322"
+
+    volumes:
+      - "${MY_WORKAREA:-/tmp}:/my_workarea"
+
+    # Start h2o server
+    command: >
+           java -Xmx4g -jar /opt/h2o.jar
+
+    # -i docker run cli option
+    stdin_open: true
+
+    # -t docker run cli option    
+    tty: true
