@@ -18,12 +18,12 @@ services:
 
     # command to start jupyter notebook server
     # disable NotebookApp.token not recommended
-    command: >
-           /opt/conda/bin/jupyter notebook --notebook-dir=/my_workarea 
-              --ip='*' 
-              --port=8888 
-              --no-browser 
-              --NotebookApp.password=${NOTEBOOK_PASSWORD}
+    # command: >
+    #        /opt/conda/bin/jupyter notebook --notebook-dir=/my_workarea 
+    #           --ip='*' 
+    #           --port=8888 
+    #           --no-browser 
+    #           --NotebookApp.password=${NOTEBOOK_PASSWORD}
 
     # -i docker run cli option
     stdin_open: true

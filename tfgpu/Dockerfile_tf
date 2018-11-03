@@ -1,35 +1,12 @@
 # Base image compatitble with Tensorflow
-FROM nvidia/cuda:9.0-cudnn7-devel-ubuntu16.04
+FROM tensorflow/tensorflow:latest-gpu-py3
 
-
-# get required utlities
-RUN apt-get update --fix-missing && apt-get install -y wget bzip2 ca-certificates \
-    libglib2.0-0 libxext6 libsm6 libxrender1 \
-    git mercurial subversion
-
-# Install Anaconda Python
-ENV LANG=C.UTF-8 LC_ALL=C.UTF-8
-ENV PATH /opt/conda/bin:$PATH
-
-# specify version of Anaconda that matches Tensorflow requirement
-ENV ANACONDA_VERSION 4.3.1
-
-RUN echo 'export PATH=/opt/conda/bin:$PATH' > /etc/profile.d/conda.sh && \
-    wget --quiet https://repo.continuum.io/archive/Anaconda3-4.3.1-Linux-x86_64.sh -O ~/anaconda.sh && \
-    /bin/bash ~/anaconda.sh -b -p /opt/conda && \
-    rm ~/anaconda.sh
-
-
-
-# install TensorFlow gpu version
-RUN pip install --ignore-installed \
-     --upgrade https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow_gpu-1.11.0-cp36-cp36m-linux_x86_64.whl
 
 
 # specify run-time user
-RUN useradd ds_user && mkdir -p /home/ds_user && chown ds_user:staff /home/ds_user && mkdir /my_workarea && chown ds_user:staff /my_workarea
+#RUN useradd ds_user && mkdir -p /home/ds_user && chown ds_user:staff /home/ds_user && mkdir /my_workarea && chown ds_user:staff /my_workarea
 
 
 # set user
-USER ds_user
+#USER ds_user
 
