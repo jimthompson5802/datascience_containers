@@ -8,6 +8,8 @@ Create file set_env_variables:
 export NOTEBOOK_PASSWORD=sha1:<hashed password>
 ```
 
+See instructions in [wiki](https://github.com/jimthompson5802/datascience_containers/wiki/Hashed-Password-for-Jupyter-Notebooks).
+
 ## Instructions
 
 Anconda Python and Jupyter Notebook and Stand-alone Spark
