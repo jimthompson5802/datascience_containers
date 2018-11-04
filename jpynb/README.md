@@ -1,5 +1,8 @@
 # Anaconda Python with Jupyter Notebook Server
 
+## Additional Packages
+* h2o
+
 ## Set up
 
 Create file set_env_variables:
