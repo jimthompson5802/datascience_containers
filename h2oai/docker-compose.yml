@@ -3,11 +3,11 @@ version: '3'
 services:
 
 # h2o image
-  h2o:
+  h2oai:
     build: 
       context: .
       dockerfile: Dockerfile_h2o
-    image: h2o
+    image: h2oai
     
     ports:
       - "54321"
