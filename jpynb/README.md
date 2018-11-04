@@ -2,6 +2,7 @@
 
 ## Additional Packages
 * h2o
+* xgboost
 
 ## Set up
 
