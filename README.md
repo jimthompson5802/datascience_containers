@@ -7,6 +7,7 @@ support the following software stacks:
 * Apache Spark (Stand-alone)
 * Tensorflow (cpu and gpu versions)
 * h2o
+* xgboost
 
 System Requirements:
 * MacOS
