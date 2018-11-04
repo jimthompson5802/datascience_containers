@@ -3,6 +3,7 @@ FROM tensorflow/tensorflow:latest-gpu-py3
 
 # specify run-time user
 # make uid/gid match ec2-user on AWS
+# on MacOS docker mask uid/gid in and out of container
 RUN groupadd -g 500 ds_user && \
     useradd -u 500 -g 500 ds_user && \
     mkdir -p /home/ds_user && \
