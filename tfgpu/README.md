@@ -23,3 +23,5 @@ start_dss tfcpu [source_code_dir]
 stop_dss tfcpu
 ```
 
+### Limitations:
+* Contains subset of Anaconda distribution.  Avaialable packages: pandas, numpy, scipy, scikit-learn
