@@ -1,4 +1,4 @@
-# Anaconda Python with Tensorflow (CPU-only)
+# Tensorflow (CPU-only) with Jupyter Notebook
 
 ## Set up
 
