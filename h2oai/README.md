@@ -1,4 +1,4 @@
-# h2o
+# h2o FLOW
 
 ## Setup
 
