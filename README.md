@@ -16,7 +16,7 @@ System Requirements:
 Directories:
 * `bin` scripts to start and stop containers
 * `h2oai` h2o Flow server
-* `jpynb` Anaconda Python
+* `jpynb` Anaconda Python with additional packages
 * `pyspnb` Ancaonda Python with stand-alone Spark
 * `rstudio` Rstudio Server (open source)
 * `tfcpu` Tensorflow with Jupyter Notebook (cpu)
