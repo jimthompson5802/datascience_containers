@@ -1,4 +1,4 @@
-# Anaconda Python with TensorFlow (GPU) (WORK-IN-PROGRESS)
+# Tensorflow (GPU) with Jupyter Notebook
 
 ## Set up
 
@@ -11,19 +11,15 @@ export NOTEBOOK_PASSWORD=sha1:<hashed password>
 
 ## Instructions
 
-
 ### To start container:
 ```
-start_dss tfgpu [source_code_dir]
+start_dss tfcpu [source_code_dir]
 ```
 `source_code_dir`: optional parameter, if missing assumes current working directory.
 
 
 ### To stop conatiner:
 ```
-stop_dss tfgpu
+stop_dss tfcpu
 ```
 
-### Limitations:
-* Notebook authentican disabled.
-* Slow performance during conda create if directory for conda environment is outside of container
