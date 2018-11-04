@@ -24,5 +24,4 @@ stop_dss tfcpu
 ```
 
 ### Limitations:
-* Notebook authentican disabled.
-* Slow performance during conda create if directory for conda environment is outside of container
+* Contains subset of Anaconda distribution.  Avaialable packages: pandas, numpy, scipy, scikit-learn
