@@ -13,14 +13,14 @@ export NOTEBOOK_PASSWORD=sha1:<hashed password>
 
 ### To start container:
 ```
-start_dss tfcpu [source_code_dir]
+start_dss tfgpu [source_code_dir]
 ```
 `source_code_dir`: optional parameter, if missing assumes current working directory.
 
 
 ### To stop conatiner:
 ```
-stop_dss tfcpu
+stop_dss tfgpu
 ```
 
 ### Limitations:
