@@ -8,6 +8,7 @@ support the following software stacks:
 * Tensorflow (cpu and gpu versions)
 * h2o
 * xgboost
+* lightgbm
 
 System Requirements:
 * MacOS
@@ -17,7 +18,7 @@ System Requirements:
 Directories:
 * `bin` scripts to start and stop containers
 * `h2oai` h2o Flow server
-* `jpynb` Anaconda Python with additional packages: h2o, xgboost
+* `jpynb` Anaconda Python with additional packages: h2o, xgboost, lightgbm
 * `pyspnb` Ancaonda Python with stand-alone Spark
 * `rstudio` Rstudio Server (open source)
 * `tfcpu` Tensorflow with Jupyter Notebook (cpu)
