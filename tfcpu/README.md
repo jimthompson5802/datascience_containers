@@ -1,4 +1,4 @@
-# Tensorflow (CPU-only) with Jupyter Notebook
+# Tensorflow (CPU) with Jupyter Notebook
 
 ## Set up
 
