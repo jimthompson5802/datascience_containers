@@ -11,12 +11,12 @@ Docker images providing the following data science software stacks for peronsal 
 
 See [wiki](https://github.com/jimthompson5802/datascience_containers/wiki) for additional information.
 
-System Requirements:
+## System Requirements:
 * MacOS
 * [Docker for Mac](https://store.docker.com/editions/community/docker-ce-desktop-mac) 18.06.1 ce (requires kubernetes enabled)
 * Chrome Browser
 
-Directories:
+## Directories:
 * `bin` scripts to start and stop containers
 * `h2oai` h2o Flow server
 * `jpynb` Anaconda Python with additional packages: h2o, xgboost, lightgbm
