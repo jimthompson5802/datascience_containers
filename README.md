@@ -9,6 +9,8 @@ Docker images providing the following data science software stacks for peronsal 
 * xgboost
 * lightgbm
 
+See [wiki](https://github.com/jimthompson5802/datascience_containers/wiki) for additional information.
+
 System Requirements:
 * MacOS
 * [Docker for Mac](https://store.docker.com/editions/community/docker-ce-desktop-mac) 18.06.1 ce (requires kubernetes enabled)
