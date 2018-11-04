@@ -2,7 +2,11 @@
 FROM tensorflow/tensorflow:latest-gpu-py3
 
 # specify run-time user
-RUN useradd ds_user && mkdir -p /home/ds_user && chown ds_user:staff /home/ds_user
+RUN useradd ds_user && \
+    mkdir -p /home/ds_user && \
+    chown ds_user:staff /home/ds_user && \
+    mkdir /my_workarea && \
+    chown ds_user:staff /my_workarea
 
 
 # set user
