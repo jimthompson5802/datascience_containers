@@ -1,7 +1,6 @@
 # Data Science Software Stack Docker Prototype
 
-Personal docker containers that provide data science software.  Containers 
-support the following software stacks:
+Personal docker images that provide the following data science software stacks:
 * Anaconda Python with Jupyter Notebook
 * Rstudio Server 
 * Apache Spark (Stand-alone)
