@@ -3,6 +3,7 @@
 ## Additional Packages
 * h2o
 * xgboost
+* lightgbm
 
 ## Set up
 
@@ -31,5 +32,4 @@ stop_dss jpynb
 ```
 
 ### Limitations:
-* Notebook authentican disabled.
-* Slow performance during conda create if directory for conda environment is outside of container
+* Image build takes 5 ot 8 minutes on Mac
