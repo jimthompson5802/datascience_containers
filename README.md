@@ -5,7 +5,7 @@ support the following software stacks:
 * Anaconda Python with Jupyter Notebook
 * Rstudio Server 
 * Apache Spark (Stand-alone)
-* Tensorflow
+* Tensorflow (cpu and gpu versions)
 * h2o
 
 System Requirements:
