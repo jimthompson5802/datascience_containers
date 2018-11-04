@@ -1,9 +1,9 @@
 .DS_Store
 *.env
 */set_env_variables
-bin/generate_notebook_password
 derby.log
 .ipynb_checkpoints
 metastore_db
 software_packages
+user_setup
 
