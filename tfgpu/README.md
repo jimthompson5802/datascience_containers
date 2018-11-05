@@ -1,5 +1,8 @@
 # Tensorflow (GPU) with Jupyter Notebook
 
+## DockerHub
+`docker pull dsimages/tfgpu`
+
 ## Set up
 
 Create file set_env_variables:
