@@ -6,7 +6,7 @@
 * lightgbm
 
 ## DockerHub
-https://hub.docker.com/r/dsimages/jpynb/
+`docker pull dsimages/jpynb`
 
 ## Set up
 
