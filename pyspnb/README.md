@@ -1,5 +1,8 @@
 # Anaconda Python with Apache Spark (Stand-alone)
 
+## DockerHub
+`docker pull dsimages/pyspnb`
+
 ## Set up
 
 Create file set_env_variables:
