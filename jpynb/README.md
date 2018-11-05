@@ -32,4 +32,4 @@ stop_dss jpynb
 ```
 
 ### Limitations:
-* Image build takes 5 ot 8 minutes on Mac
+* Image build on Mac took about 17 minutes.
