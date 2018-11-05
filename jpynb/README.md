@@ -5,6 +5,9 @@
 * xgboost
 * lightgbm
 
+## DockerHub
+https://hub.docker.com/r/dsimages/jpynb/
+
 ## Set up
 
 Create file set_env_variables:
