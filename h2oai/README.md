@@ -8,12 +8,18 @@ Installation based on information found [here](https://h2o-release.s3.amazonaws.
 
 ### To start container:
 ```
-start_dss h2o [source_code_dir]
+start_dss h2oai [source_code_dir]
 ```
 `source_code_dir`: Not Applicable.  Directory location is user outside of home directory.
 
 
+### To launch web browser (MacOS only) or print port number to connect (AWS Linux)
+```
+launch_dss h2oai
+```
+
+
 ### To stop conatiner:
 ```
-stop_dss h2o
+stop_dss h2oai
 ```
