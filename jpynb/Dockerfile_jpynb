@@ -1,7 +1,8 @@
 FROM continuumio/anaconda3:5.3.0
 
 #
-#  install xgboost
+#  install xgboost and lightgbm
+#
 #  https://anaconda.org/conda-forge/xgboost
 #  https://anaconda.org/conda-forge/lightgbm
 #
