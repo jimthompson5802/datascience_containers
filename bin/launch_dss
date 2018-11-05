@@ -26,7 +26,19 @@ case "$server" in
 	    exit 1
  
      esac \
-    && echo "start on browser on http://127.0.0.1:"$port \
-   && if [ `uname -s` = "Darwin" ]; then
-         /usr/bin/open -a "/Applications/Google Chrome.app" "http://127.0.0.1:"$port
-      fi
+   && case `uname -s` in
+      	"Darwin")
+		    echo 
+			echo ">>>>>>> Staring Chrome on htt://127.0.0.1:"$port 
+			echo 
+			/usr/bin/open -a "/Applications/Google Chrome.app" "http://127.0.0.1:"$port
+			;;
+
+		"Linux")
+			# assume AWS
+			echo 
+			echo ">>>>>> Start browser on http://aws_public_id_address:"$port
+			echo
+			;;
+
+	   esac
