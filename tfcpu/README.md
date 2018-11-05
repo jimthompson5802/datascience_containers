@@ -1,5 +1,8 @@
 # Tensorflow (CPU) with Jupyter Notebook
 
+## DockerHub
+`docker pull dsimages/tfcpu`
+
 ## Set up
 
 Create file set_env_variables:
