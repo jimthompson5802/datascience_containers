@@ -32,4 +32,6 @@ stop_dss jpynb
 ```
 
 ### Limitations:
-* Image build on Mac took about 17 minutes.
+Image build time:
+* Mac about 17 minutes
+* AWS Linux (p2.xlarge) about 18 minutes
