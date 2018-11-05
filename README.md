@@ -22,5 +22,5 @@ See [wiki](https://github.com/jimthompson5802/datascience_containers/wiki) for a
 * `jpynb` Anaconda Python with additional packages: h2o, xgboost, lightgbm
 * `pyspnb` Ancaonda Python with stand-alone Spark
 * `rstudio` Rstudio Server (open source)
-* `tfcpu` Tensorflow with Jupyter Notebook (cpu)
-* `tfgpu` Tensorflow with Jupyter Notebook (gpu)
+* `tfcpu` Tensorflow with Python 3 and Jupyter Notebook (cpu)
+* `tfgpu` Tensorflow with Python 3 and Jupyter Notebook (gpu)
