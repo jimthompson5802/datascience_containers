@@ -4,7 +4,6 @@ services:
 
 # Anaconda environment
   jpynb:
-    #image: continuumio/anaconda3
     build: 
       context: .
       dockerfile: Dockerfile_jpynb

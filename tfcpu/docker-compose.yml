@@ -4,7 +4,6 @@ services:
 
 # Anaconda environment
   tfcpu:
-    #image: continuumio/anaconda3
     build: 
       context: .
       dockerfile: Dockerfile_tf

@@ -5,7 +5,6 @@ services:
 
 # Anaconda environment
   pyspnb:
-    #image: continuumio/anaconda3
     build: 
       context: .
       dockerfile: Dockerfile_pyspnb
