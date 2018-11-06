@@ -29,7 +29,7 @@ case "$server" in
    && case `uname -s` in
       	"Darwin")
 		    echo 
-			echo ">>>>>>> Staring Chrome on htt://127.0.0.1:"$port 
+			echo ">>>>>>> Starting Chrome on http://127.0.0.1:"$port 
 			echo 
 			/usr/bin/open -a "/Applications/Google Chrome.app" "http://127.0.0.1:"$port
 			;;

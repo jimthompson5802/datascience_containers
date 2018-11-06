@@ -5,18 +5,15 @@
 * xgboost
 * lightgbm
 
-## DockerHub
-`docker pull dsimages/jpynb`
+
 
 ## Set up
 
-Create file set_env_variables:
+Pull image from dockerhub.com and create short-cut tag: 
 ```
-# set password and options for Jupyter Notebook
-export NOTEBOOK_PASSWORD=sha1:<hashed password>
+docker pull dsimages/jpynb
+docker tag dsimages/jpynb jpynb
 ```
-
-See instructions in [wiki](https://github.com/jimthompson5802/datascience_containers/wiki/Hashed-Password-for-Jupyter-Notebooks).
 
 ## Instructions
 
@@ -39,6 +36,7 @@ stop_dss jpynb
 ```
 
 ### Limitations:
-Image build time:
-* Mac about 17 minutes
-* AWS Linux (p2.xlarge) about 18 minutes
+* Notebook authentican disabled.
+* Image build time: Mac about 17 minutes; AWS Linux (p2.xlarge) about 18 minutes
+
+

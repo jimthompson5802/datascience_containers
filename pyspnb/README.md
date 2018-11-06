@@ -1,17 +1,13 @@
 # Anaconda Python with Apache Spark (Stand-alone)
 
-## DockerHub
-`docker pull dsimages/pyspnb`
 
 ## Set up
 
-Create file set_env_variables:
+Pull image from dockerhub.com and create short-cut tag: 
 ```
-# set password and options for Jupyter Notebook
-export NOTEBOOK_PASSWORD=sha1:<hashed password>
+docker pull dsimages/pyspnb
+docker tag dsimages/pyspnb pyspnb
 ```
-
-See instructions in [wiki](https://github.com/jimthompson5802/datascience_containers/wiki/Hashed-Password-for-Jupyter-Notebooks).
 
 ## Instructions
 
@@ -36,4 +32,3 @@ stop_dss pyspnb
 
 ### Limitations:
 * Notebook authentican disabled.
-* Slow performance during conda create if directory for conda environment is outside of container

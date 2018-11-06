@@ -1,17 +1,12 @@
 # Tensorflow (CPU) with Jupyter Notebook
 
-## DockerHub
-`docker pull dsimages/tfcpu`
-
 ## Set up
 
-Create file set_env_variables:
+Pull image from dockerhub.com and create short-cut tag: 
 ```
-# set password and options for Jupyter Notebook
-export NOTEBOOK_PASSWORD=sha1:<hashed password>
+docker pull dsimages/tfcpu
+docker tag dsimages/tfcpu
 ```
-
-See instructions in [wiki](https://github.com/jimthompson5802/datascience_containers/wiki/Hashed-Password-for-Jupyter-Notebooks).
 
 ## Instructions
 
@@ -33,4 +28,5 @@ stop_dss tfcpu
 ```
 
 ### Limitations:
-* Contains subset of Anaconda distribution.  Avaialable packages: pandas, numpy, scipy, scikit-learn
+* Notebook authentican disabled.
+* Contains subset of Anaconda distribution.  Available packages: pandas, numpy, scipy, scikit-learn
