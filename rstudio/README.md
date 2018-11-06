@@ -2,8 +2,6 @@
 
 ## Set up
 
-## Set up
-
 Pull image from dockerhub.com and create short-cut tag: 
 ```
 docker pull dsimages/rstudio
