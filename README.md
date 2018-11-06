@@ -21,6 +21,6 @@ See [wiki](https://github.com/jimthompson5802/datascience_containers/wiki) for a
 * `h2oai` h2o Flow server
 * `jpynb` Anaconda Python with additional packages: h2o, xgboost, lightgbm
 * `pyspnb` Ancaonda Python with stand-alone Spark
-* `rstudio` Rstudio Server (open source)
+* `rstudio` Rstudio Server (Community Edition)
 * `tfcpu` Tensorflow with Python 3 and Jupyter Notebook (cpu)
 * `tfgpu` Tensorflow with Python 3 and Jupyter Notebook (gpu)
