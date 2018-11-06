@@ -2,14 +2,14 @@
 
 ## Set up
 
-RStudio Server 
+## Set up
 
-Create file `set_env_variables`:
+Pull image from dockerhub.com and create short-cut tag: 
 ```
-# set password for the default userid rstudio
-export PASSWORD=<password for rstudio user>
+docker pull dsimages/rstudio
+docker tag dsimages/rstudio rstudio
 ```
-example `export PASSWORD=this_is_password`
+
 
 ## Instructions 
 
@@ -25,10 +25,13 @@ start_dss rstudio [source_code_dir]
 launch_dss rstudio
 ```
 
+Login with user name `rstudio`, password `rstudio_pw`
+
+
 ### To stop conatiner:
 ```
 stop_dss rstudio
 ```
 
 ### Limitations:
-* Rstudio authentication dependent of static password stored in rstudio.env
+* Rstudio user set to constant value.

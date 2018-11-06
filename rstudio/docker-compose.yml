@@ -14,7 +14,7 @@ services:
       - "8787"
 
     environment:
-      - PASSWORD=$PASSWORD
+      - PASSWORD=rstudio_pw
 
     volumes:
       - "${MY_WORKAREA:-/tmp}:/my_workarea"
