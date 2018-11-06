@@ -7,3 +7,6 @@ metastore_db
 software_packages
 user_setup
 
+# Allow
+!pyspnb/set_env_variables
+

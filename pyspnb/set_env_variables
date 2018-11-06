@@ -1,0 +1,7 @@
+
+# set options for pyspark
+
+export PYSPARK_DRIVER_PYTHON_OPTS="notebook --NotebookApp.token='' \
+			--notebook-dir=/my_workarea \
+			--ip='*'  --port=8888 --no-browser"
+
