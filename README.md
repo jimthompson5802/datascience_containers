@@ -11,6 +11,8 @@ Docker images providing the following data science software stacks for peronsal 
 
 See [wiki](https://github.com/jimthompson5802/datascience_containers/wiki) for additional information.
 
+Built docker images can be found at [dockerhub.com](https://hub.docker.com/u/dsimages/)
+
 ## System Requirements:
 * MacOS
 * [Docker for Mac](https://store.docker.com/editions/community/docker-ce-desktop-mac) 18.06.1 ce (requires kubernetes enabled)
