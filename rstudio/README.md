@@ -2,10 +2,9 @@
 
 ## Set up
 
-Pull image from dockerhub.com and create short-cut tag: 
+Pull image from dockerhub.com
 ```
-docker pull dsimages/rstudio
-docker tag dsimages/rstudio rstudio
+pull_image jpynb
 ```
 
 

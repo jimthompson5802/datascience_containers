@@ -9,10 +9,9 @@
 
 ## Set up
 
-Pull image from dockerhub.com and create short-cut tag: 
+Pull image from dockerhub.com
 ```
-docker pull dsimages/jpynb
-docker tag dsimages/jpynb jpynb
+pull_image jpynb
 ```
 
 ## Instructions

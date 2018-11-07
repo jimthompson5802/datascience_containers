@@ -3,10 +3,9 @@
 
 ## Set up
 
-Pull image from dockerhub.com and create short-cut tag: 
+Pull image from dockerhub.com
 ```
-docker pull dsimages/pyspnb
-docker tag dsimages/pyspnb pyspnb
+pull_image jpynb
 ```
 
 ## Instructions

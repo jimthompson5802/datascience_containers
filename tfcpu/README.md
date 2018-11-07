@@ -2,10 +2,9 @@
 
 ## Set up
 
-Pull image from dockerhub.com and create short-cut tag: 
+Pull image from dockerhub.com
 ```
-docker pull dsimages/tfcpu
-docker tag dsimages/tfcpu
+pull_image jpynb
 ```
 
 ## Instructions

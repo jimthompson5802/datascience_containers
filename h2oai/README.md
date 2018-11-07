@@ -4,6 +4,11 @@
 
 Installation based on information found [here](https://h2o-release.s3.amazonaws.com/h2o/rel-turing/1/docs-website/h2o-docs/docker.html).
 
+Pull image from dockerhub.com
+```
+pull_image h2oai
+```
+
 ## Instructions
 
 ### To start container:
