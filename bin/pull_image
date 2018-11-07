@@ -1,0 +1,20 @@
+#!/bin/bash
+
+###
+#  pull docker image from dockerhub
+###
+
+# Arguments:
+#  $1:  image identifier, e.g., jpynb, rstudio, tfgpu, etc.
+
+image_id=$1
+
+
+# pull image down
+docker pull dsimages/$image_id
+
+# create image short-cut id
+docker tag dsimages/$image_id $image_id
+
+# remove unneeded image tag
+docker image rm dsimages/$image_id
