@@ -37,7 +37,7 @@ case "$server" in
 		"Linux")
 			# assume AWS
 			echo 
-			echo ">>>>>> Start browser on http://aws_public_id_address:"$port
+			echo ">>>>>> Start browser on http://aws_public_ip.awsamazon.com:"$port
 			echo
 			;;
 

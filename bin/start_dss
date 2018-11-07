@@ -22,7 +22,8 @@ fi
 # Launch container
 
 cd $base_dir/../$server \
-   && docker-compose up -d 
+   && docker-compose up -d \
+   && launch_dss $server
 
 
 
