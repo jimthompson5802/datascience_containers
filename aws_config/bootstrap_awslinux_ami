@@ -1,0 +1,34 @@
+#!/bin/bash
+
+#
+# Configure AWS Linux AMI for use
+#
+
+# apply latest patches
+yum update -y 
+
+# install required packages
+yum install -y git \
+   jq \
+   docker
+
+# install docker-compose
+curl -L "https://github.com/docker/compose/releases/download/1.22.0/docker-compose-$(uname -s)-$(uname -m)" \
+     -o /usr/local/bin/docker-compose
+chmod +x /usr/local/bin/docker-compose
+
+
+# start docker service
+service docker start
+
+# add docker group to ec2-user
+usermod -a -G docker ec2-user
+
+
+# position to ec2-user home directory
+cd /home/ec2-user \
+  && git clone https://github.com/jimthompson5802/datascience_containers.git \
+  && echo 'export PATH=$PWD/datascience_containers/bin:$PATH' >> /home/ec2-user/.bashrc \
+  && touch /home/ec2-user/all_done.txt
+
+  

@@ -1,0 +1,20 @@
+#!/bin/bash
+
+#
+# Configuration for AWS Deep Learning Base AMI
+#
+
+# get current updates
+yum update -y
+
+# install docker-compose
+curl -L "https://github.com/docker/compose/releases/download/1.22.0/docker-compose-$(uname -s)-$(uname -m)" \
+     -o /usr/local/bin/docker-compose
+chmod +x /usr/local/bin/docker-compose
+
+
+# position to ec2-user home directory
+cd /home/ec2-user \
+  && git clone https://github.com/jimthompson5802/datascience_containers.git \
+  && echo 'export PATH=$PWD/datascience_containers/bin:$PATH' >> /home/ec2-user/.bashrc \
+  && touch /home/ec2-user/all_done.txt
