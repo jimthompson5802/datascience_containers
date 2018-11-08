@@ -29,6 +29,6 @@ usermod -a -G docker ec2-user
 cd /home/ec2-user \
   && git clone https://github.com/jimthompson5802/datascience_containers.git \
   && echo 'export PATH=$PWD/datascience_containers/bin:$PATH' >> /home/ec2-user/.bashrc \
-  && touch /home/ec2-user/all_done.txt
+  && touch /home/ec2-user/SETUP_ALL_DONE
 
   

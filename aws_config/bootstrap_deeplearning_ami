@@ -12,9 +12,13 @@ curl -L "https://github.com/docker/compose/releases/download/1.22.0/docker-compo
      -o /usr/local/bin/docker-compose
 chmod +x /usr/local/bin/docker-compose
 
+# set docker runtime to nvidida-docker2 extension
+sed -i '1 a \  "default-runtime": "nvidia",' /etc/docker/daemon.json \
+  && service docker restart
+
 
 # position to ec2-user home directory
 cd /home/ec2-user \
   && git clone https://github.com/jimthompson5802/datascience_containers.git \
   && echo 'export PATH=$PWD/datascience_containers/bin:$PATH' >> /home/ec2-user/.bashrc \
-  && touch /home/ec2-user/all_done.txt
+  && touch /home/ec2-user/SETUP_ALL_DONE
