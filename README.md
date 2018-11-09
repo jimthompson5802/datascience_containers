@@ -13,6 +13,10 @@ See [wiki](https://github.com/jimthompson5802/datascience_containers/wiki) for a
 
 Built docker images can be found at [dockerhub.com](https://hub.docker.com/u/dsimages/)
 
+This work inspired by these talks:
+* [Docker for Data Scientists](https://www.youtube.com/watch?v=GOW6yQpxOIg)
+* [Capital One Analytic Garage on Docker](https://www.youtube.com/watch?v=ogDa2-A1y9U)
+
 ## System Requirements:
 * MacOS
 * [Docker for Mac](https://store.docker.com/editions/community/docker-ce-desktop-mac) 18.06.1 ce (requires kubernetes enabled)
