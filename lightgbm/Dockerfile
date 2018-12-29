@@ -1,4 +1,5 @@
-FROM continuumio/anaconda3:5.3.0
+FROM continuumio/anaconda3:5.2.0
+# For Python 3.6
 
 #
 #  install lightgbm

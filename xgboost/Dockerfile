@@ -1,4 +1,5 @@
 FROM continuumio/anaconda3:5.3.0
+# Python 3.7
 
 #
 #  install xgboost
