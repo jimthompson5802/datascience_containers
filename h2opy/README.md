@@ -2,8 +2,6 @@
 
 ## Additional Packages
 * h2o
-* xgboost
-* lightgbm
 
 
 
@@ -11,7 +9,7 @@
 
 Pull image from dockerhub.com
 ```
-pull_image jpynb
+pull_image h2opy
 ```
 
 ## Instructions
@@ -20,22 +18,21 @@ Anconda Python and Jupyter Notebook
 
 ### To start container:
 ```
-start_dss jpynb [source_code_dir]
+start_dss h2opy [source_code_dir]
 ```
 `source_code_dir`: optional parameter, if missing assumes current working directory.
 
 ### To launch web browser (MacOS only) or print port number to connect (AWS Linux)
 ```
-launch_dss jpynb
+launch_dss h2opy
 ```
 
 ### To stop conatiner:
 ```
-stop_dss jpynb
+stop_dss h2opy
 ```
 
 ### Limitations:
 * Notebook authentican disabled.
-* Image build time: Mac about 17 minutes; AWS Linux (p2.xlarge) about 18 minutes
 
 
