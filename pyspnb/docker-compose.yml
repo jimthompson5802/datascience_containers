@@ -22,10 +22,14 @@ services:
       - "${MY_WORKAREA:-/tmp}:/my_workarea"
 
     # command to start jupyter notebook server
-    command: pyspark --driver-memory 8g --master local[*] 
+    command: >
+       pyspark --driver-memory 8g 
+           --master local[*] 
+           
 
     # -i docker run cli option
     stdin_open: true
 
     # -t docker run cli option    
     tty: true
+# --driver-java-options -Djava.io.tmpdir=/my_workarea/tmp_dir
