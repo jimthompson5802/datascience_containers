@@ -1,4 +1,4 @@
-FROM continuumio/anaconda3:5.3.0
+FROM continuumio/anaconda3:latest
 
 # #
 # #  install xgboost and lightgbm
@@ -6,7 +6,7 @@ FROM continuumio/anaconda3:5.3.0
 # #  https://anaconda.org/conda-forge/xgboost
 # #  https://anaconda.org/conda-forge/lightgbm
 # #
-# RUN conda install -c conda-forge xgboost lightgbm
+RUN conda install -c conda-forge xgboost lightgbm
 
 
 # #

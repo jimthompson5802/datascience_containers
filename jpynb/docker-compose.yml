@@ -6,7 +6,7 @@ services:
   jpynb:
     build: 
       context: .
-      dockerfile: Dockerfile_jpynb
+      dockerfile: Dockerfile
     image: jpynb
     
     ports:
