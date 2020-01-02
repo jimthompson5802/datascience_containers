@@ -16,8 +16,10 @@ RUN groupadd -g 500 ds_user && \
     useradd -u 500 -g 500 ds_user && \
     mkdir -p /home/ds_user && \
     chown ds_user:ds_user /home/ds_user && \
-    mkdir /my_workarea && \
-    chown ds_user:ds_user /my_workarea
+    mkdir -p /opt/project/meda && \
+    chown ds_user:ds_user /opt/project/meda && \
+    mkdir -p /opt/project/emr && \
+    chown ds_user:ds_user /opt/project/emr
 
 # set user
 USER ds_user
