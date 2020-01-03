@@ -9,7 +9,7 @@ server=$1
 
 # Start web broser and connect to container with the host port assigned
 case "$server" in
-	jpynb|pyspnb|tfcpu|tfgpu|xgboost|lightgbm|h2opy|ludwig)
+	jpynb|pyspnb|tfcpu|tfgpu|xgboost|lightgbm|h2opy|ludwig|rfcde)
 	    port=`docker container inspect ${server}_${server}_1 | jq -r '.[0].NetworkSettings.Ports."8888/tcp"[0].HostPort'`
 	    ;;
 	 
