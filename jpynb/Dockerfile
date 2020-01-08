@@ -1,5 +1,6 @@
 FROM continuumio/anaconda3:latest
 
+RUN apt-get update && apt-get -y install build-essential
 # #
 # #  install xgboost and lightgbm and hyperopt
 # #
@@ -8,6 +9,7 @@ FROM continuumio/anaconda3:latest
 # #
 RUN conda install -c conda-forge xgboost lightgbm hyperopt
 RUN conda install pydot
+RUN pip install shap
 
 # specify run-time user
 # make uid/gid match ec2-user on AWS
