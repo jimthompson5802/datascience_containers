@@ -8,7 +8,7 @@ RUN apt-get update && apt-get -y install build-essential
 # #  https://anaconda.org/conda-forge/lightgbm
 # #
 RUN conda install -c conda-forge xgboost lightgbm hyperopt
-RUN conda install pydot
+RUN conda install pydot pyarrow
 RUN pip install shap
 
 # specify run-time user
