@@ -13,7 +13,7 @@ services:
       - "8888"
 
     volumes:
-      - "${MY_WORKAREA:-/tmp}:/opt/project/meda"
+      - "${MY_WORKAREA:-/tmp}:/opt/project"
 
     # command to start jupyter notebook server
     command: >
